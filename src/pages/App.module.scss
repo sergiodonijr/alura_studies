@@ -1,0 +1,30 @@
+.AppStyle {
+  display: grid;
+  grid-template-rows: min-content min-content auto;
+  grid-template-areas: 
+  "nova-tarefa"
+  "cronometro"
+  "tarefas"
+  ;
+  row-gap: 2.4rem;
+  min-width: 32rem;
+  min-height: calc(100vh - 3.2rem);
+  width: 100%;
+  padding: 3.2rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: #171717;
+
+  @media screen and (min-width:1280px)  {
+    grid-template-areas: 
+    "nova-tarefa tarefas"
+    "cronometro tarefas"
+    ;
+    column-gap: 6.4rem;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: 75rem 30rem;
+    justify-content: center;
+    align-content: center;
+    padding: 6.4rem;
+  }
+}
